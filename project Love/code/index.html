@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="indexCss.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<section class="BackgroundIndex">
+		<div class="btnMenu">
+			<button><img width="50" height="50" src="Image/btnMenu.png" alt=""></button>
+		</div>
+		<div class="btnBack">
+				<button><img width="50" height="50" src="Image/BtnBack.png" alt=""></button>
+			</div>
+		<div class="BG">
+			
+		</div>
+		<div class="Login">
+			<img class="logo" width="160" height="75" src="Image/logo.png" alt="">
+			<div class="KhungDN">
+				<input class="KhungTk form-control" type="text" name="" placeholder="Nhập tài khoản">
+				<input id="pwd" class="KhungMk form-control" type="password" name="" placeholder="Nhập mật khẩu">
+				<button id="eye"><img src="Image/EyesMK.png" alt=""></button>
+			</div>
+			<div class="btnLogin">
+				<button class="btn btnDN">Đăng Nhập</button>
+				<button class="btn btnDK">Đăng Kí</button>
+			</div>
+			<div class="LoginMXH">
+				<div class="TextLogin">
+					<span>đăng nhập với</span>
+				</div>
+				<div class="ButtonMXH">
+					<button class=""><img src="Image/btnFacebook.jpg" alt=""></button>
+					<button class=""><img src="Image/btnGooglePlus.jpg" alt=""></button>
+				</div>
+			</div>
+			<div class="IDquenMK">
+				<a href="">Quên mật khẩu</a>
+			</div>
+		</div>
+		<div class="SignUp">
+			<img class="logo" width="160" height="75" src="Image/logo.png" alt="">
+			<p>Chào mững bạn đến với thế giới Đi tìm tình yêu</p>
+			<p style="margin-top: -10px">MỜI BẠN ĐĂNG KÍ VỚI THÔNG TIN CỦA BẠN</p>
+			<div class="KhungDK">
+				<input class="form-control" type="text" name="" placeholder="Nhập tài khoản">
+				<input id="pwdk" class="form-control" type="password" name="" placeholder="Nhập mật khẩu">
+				<button id="eyeDK"><img src="Image/EyesMK.png" alt=""></button>
+				<input id="" class="form-control" type="Email" name="" placeholder="Email">
+				<input id="" class="form-control" type="text" name="" placeholder="SDT">
+			</div>
+			<div class="btnSignUp">
+				<button class="btn btnDN">Đăng Kí</button>
+			</div>
+			<div class="IDHelp">
+				<a href="">Giúp đỡ</a>
+			</div>
+		</div>
+
+
+	</section>
+
+	<script type="text/javascript">
+		function showDN() {
+			var p = document.getElementById('pwd');
+			p.setAttribute('type', 'text');
+		}
+
+		function hideDN() {
+			var p = document.getElementById('pwd');
+			p.setAttribute('type', 'password');
+		}
+
+		var pwShownDN = 0;
+
+		document.getElementById("eye").addEventListener("click", function () {
+			if (pwShownDN == 0) {
+				pwShownDN = 1;
+				showDN();
+			} else {
+				pwShownDn = 0;
+				hideDN();
+			}
+		}, false);
+
+
+
+		function showDK() {
+			var p = document.getElementById('pwdk');
+			p.setAttribute('type', 'text');
+		}
+
+		function hideDK() {
+			var p = document.getElementById('pwdk');
+			p.setAttribute('type', 'password');
+		}
+
+		var pwShownDK = 0;
+
+		document.getElementById("eyeDK").addEventListener("click", function () {
+			if (pwShownDK == 0) {
+				pwShownDK = 1;
+				showDK();
+			} else {
+				pwShownDK = 0;
+				hideDK();
+			}
+		}, false);
+
+
+		$('.btnBack').click(function () {
+			$('.Login').show();
+			$('.SignUp').hide();
+			$('.btnBack').hide();
+		})
+		$('.btnDK').click(function () {
+			$('.Login').hide();
+			$('.SignUp').show();
+			$('.btnBack').show();
+		})
+
+
+
+	</script>
+	
+</body>
+</html>

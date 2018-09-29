@@ -1,0 +1,52 @@
+body{padding: 0; margin: 0; font-family: Helvetica Neue ; font-size: 10px}
+.BackgroundIndex{width: 100%; height: 100vh; background: url(Image/Background.jpg) no-repeat; background-size: cover; position: relative;}
+.BackgroundIndex .btnMenu {position: absolute; top: 20px; right: 20px}
+.BackgroundIndex .btnMenu button{background: none; border: none}
+.BackgroundIndex .btnMenu img{width: 50px; height: 50px;}
+.BackgroundIndex .btnBack {position: absolute; top: 20px; left: 20px; display: none;}
+.BackgroundIndex .btnBack button{background: none; border: none}
+.BackgroundIndex .btnBack img{width: 50px; height: 50px;}
+.BG{width: 26%; height: 78%;background-color: #000; opacity: 0.4; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.Login{width: 26%; height: 78%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); overflow: hidden; }
+.logo{width: 160px; height: 75px; display: block; margin: 20px auto}
+.KhungDN {border-radius: 10px; border: 1px solid #FFF; width: 320px; height: 100px; margin: 0px auto; max-width: 90%; max-height: 20%; overflow: hidden;}
+.KhungDN input{width: 100%; height: 50%; background: none;}
+.KhungDN input::placeholder{color: #fff; font-size: 0.8em; letter-spacing: 0.4em; font-weight: lighter;}
+.KhungDN .KhungTk{border-bottom:1px solid #FFF; letter-spacing: 0.5; color: #4f4f4f; border-radius: 0px}
+.KhungDN .KhungMk{border-top:1px solid #FFF; border-radius: 0px; letter-spacing: 0.5; color: #4f4f4f; width: 85%; float: left;}
+.form-control{border: none;}
+.KhungDN button {background: none; width: 15%; height: 50px; border: 1px solid #fff; border-bottom-right-radius: 10px; padding: 0;}
+.KhungDN button img{width: 30px; height: 17px;}
+.btnLogin {width: 320px; height: 100px;margin: 10px auto; max-width: 90% ; max-height: 20%}
+.btnLogin button{width: 100%; height: 40%; border-radius: 8px; border: 1px solid #fff; font-weight: lighter; text-transform: uppercase; color: #fff; letter-spacing: 0.5em; font-size: 1em;margin-top: 10px;}
+.btnLogin .btnDN {background-color: #000;}
+.btnLogin .btnDK{background:none;}
+.LoginMXH {width: 320px; height: 50px; margin: 0px auto; max-width: 100%; overflow: hidden;}
+.LoginMXH .TextLogin{float: left; width: 180px; height: 50px; text-align: center; margin-top: 15px;}
+.LoginMXH .TextLogin span{font-size: 1.3em; color: #fff; text-transform: uppercase; font-weight: lighter; letter-spacing: 0.2em}
+.LoginMXH .ButtonMXH {width: 140px; height: 100%; float: left;}
+.LoginMXH .ButtonMXH button{height: 50px; width: 50px; background:none; overflow: hidden; padding: 0px; border: none;}
+.LoginMXH .ButtonMXH button img{width: 50px; height: 50px;}
+.Login .IDquenMK{width: 100%; height: 50px; margin-top: 80px;}
+.Login .IDquenMK a{text-align: center;display: block; color: #fff; font-weight: lighter; letter-spacing: 0.2em}
+.SignUp{display: none;width: 26%; height: 78%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); overflow: hidden;}
+.KhungDK {border-radius: 10px; border: 1px solid #FFF; width: 320px; height: 200px; margin: 0px auto;overflow: hidden;}
+.KhungDK input{width: 100%; height: 25%; background: none;letter-spacing: 0.5; border-radius:0px}
+.KhungDK input::placeholder{color: #fff; font-size: 0.8em; letter-spacing: 0.4em; font-weight: lighter;}
+.KhungDK input+input{border: 1px solid #fff}
+#pwdk {width: 85%; float: left; }
+.KhungDK button {background: none; width: 15%; height: 50px; border: 1px solid #fff; padding: 0; float: left;}
+.KhungDK button img{width: 30px; height: 17px;}
+.SignUp p {text-align: center; font-size: 1em; color: #fff; font-weight: lighter; letter-spacing: 0.2em}
+.btnSignUp {width: 320px; height: 50px;margin: 10px auto; max-width: 90% ; max-height: 20%}
+.btnSignUp button{width: 100%; height: 80%; border-radius: 8px; border: 1px solid #fff; font-weight: lighter; text-transform: uppercase; color: #fff; letter-spacing: 0.5em; font-size: 1em;margin-top: 10px; background-color: #000;}
+.SignUp .IDHelp{width: 100%; height: 50px; margin-top: 30px;}
+.SignUp .IDHelp a{text-align: center;display: block; color: #fff; font-weight: lighter; letter-spacing: 0.2em}
+.btnBack {width: 50px; height: 50px; position: absolute; top: 20px; left: 20px}
+@media (max-width: 720px) {
+	.BackgroundIndex .btnMenu {left: 50%; transform: translateX(-50%);}
+	.BackgroundIndex .btnMenu button{margin: 0px auto;display: block;}
+	.BackgroundIndex{background:url(Image/BackgroundMobile.jpg);}
+	.Login{width: 78%; height: 78%; margin: 0px auto;}
+	.BG{width: 78%; height: 78%;background-color: #000; opacity: 0.6; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+}
